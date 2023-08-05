@@ -13,6 +13,4 @@ def extract_all(script: str):
     for name in metrics:
         results[name] = metrics[name](script).count()
 
-    print("ciao")
-
     return results

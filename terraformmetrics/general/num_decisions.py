@@ -34,6 +34,6 @@ class NumDecisions(TerraformMetric):
                     count += len(COMPARISON_OPERATORS.findall(str(no_quotes_text)))
             return count
 
-        total_operator_count = count_operators(self.tffile)
+        total_operator_count = count_operators(self.tfparsed)
 
         return total_operator_count

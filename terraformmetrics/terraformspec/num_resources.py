@@ -13,7 +13,7 @@ class NumResources(TerraformMetric):
         int
             Number of resources
         """
-        resource_list = self.tffile.get('resource', [])
+        resource_list = self.tfparsed.get('resource', [])
         resource = len(resource_list)
 
         return resource

@@ -7,6 +7,7 @@ from terraformmetrics.general.num_decisions import NumDecisions
 
 #Terraform specific
 from terraformmetrics.terraformspec.num_resources import NumResources
+from terraformmetrics.terraformspec.avg_resource_size import AvgResourcesSize
 
 general_metrics = {
                     'lines_code': LinesCode,
@@ -16,6 +17,7 @@ general_metrics = {
                     'num_decisions': NumDecisions,
                   }
 tf_metrics = {
-                'num_resources': NumResources
+                'num_resources': NumResources,
+                'avg_resources_size': AvgResourcesSize,
              }
 

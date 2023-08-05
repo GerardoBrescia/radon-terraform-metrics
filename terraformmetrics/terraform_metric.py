@@ -20,17 +20,23 @@ class TerraformMetric:
             raise TypeError("Parameter 'script' meant to be a string, not None.")
         try :
             # Check if is a valid yaml
-            self.__hcl = hcl2.loads(script)
+            self.__hcl = hcl2.loads(script, with_meta=True)
             if self.__hcl is None:
                 raise TypeError("Expected a not empty Terraform script")
+            self.__script = script
 
         except UnexpectedCharacters as e:
             raise TypeError("Expected a valid Terraform script")
 
     @property
-    def tffile(self):
+    def tfparsed(self):
         """Il file Terraform in formato HCL."""
         return self.__hcl
+
+    @property
+    def tfscript(self):
+        """Il file Terraform in formato HCL."""
+        return self.__script.splitlines()
 
     def count(self):
         """Metodo per eseguire la metrica."""
