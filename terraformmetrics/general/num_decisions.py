@@ -12,11 +12,11 @@ class NumDecisions(TerraformMetric):
     """
 
     def count(self):
-        """Return the number of conditions
+        """Return the number of decisions
         Returns
         -------
         int
-            Number of conditions
+            Number of decisions
         """
 
         # Funzione ricorsiva per contare operatori all'interno di un dizionario o una lista

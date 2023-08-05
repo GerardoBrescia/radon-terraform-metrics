@@ -1,18 +1,17 @@
 from terraformmetrics.terraform_metric import TerraformMetric
 
 class NumResources(TerraformMetric):
-    """ This class measures the number of decisions within an if block in a Script Terraform
+    """ This class measures the number of reources in a Script Terraform
 
-    decisions are identified by counting the number of occurrences of the operators : (&& || !)
-    within an if block
+    resources are identified by counting the number of occurrences of the keyword resource
     """
 
     def count(self):
-        """Return the number of conditions
+        """Return the number of resources
         Returns
         -------
         int
-            Number of conditions
+            Number of resources
         """
         resource_list = self.tffile.get('resource', [])
         resource = len(resource_list)
