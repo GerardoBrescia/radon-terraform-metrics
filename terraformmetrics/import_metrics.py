@@ -1,9 +1,12 @@
-#DA FAREtutti gli import
+#General Metrics
 from terraformmetrics.general.lines_code import LinesCode
 from terraformmetrics.general.lines_blank import LinesBlank
 from terraformmetrics.general.lines_comment import LinesComment
 from terraformmetrics.general.num_conditions import NumConditions
 from terraformmetrics.general.num_decisions import NumDecisions
+
+#Terraform specific
+from terraformmetrics.terraformspec.num_resources import NumResources
 
 general_metrics = {
                     'lines_code': LinesCode,
@@ -12,5 +15,7 @@ general_metrics = {
                     'num_conditions': NumConditions,
                     'num_decisions': NumDecisions,
                   }
-tf_metrics = {}
+tf_metrics = {
+                'num_resources': NumResources
+             }
 

@@ -31,6 +31,7 @@ class LinesComment(LinesMetric):
                     continue
             elif "*/" in stripped_line:
                 in_multiline_comment = False
+                cloc += 1
                 continue
 
             if in_multiline_comment:

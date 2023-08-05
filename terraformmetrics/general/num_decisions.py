@@ -32,7 +32,6 @@ class NumDecisions(TerraformMetric):
                 if re.search(r' \? ', data) and re.search(r' : ', data):
                     no_quotes_text = re.sub(r'"(.*?)"', ' ', data)
                     count += len(COMPARISON_OPERATORS.findall(str(no_quotes_text)))
-                    print(COMPARISON_OPERATORS.findall(str(no_quotes_text)))
             return count
 
         total_operator_count = count_operators(self.tffile)
