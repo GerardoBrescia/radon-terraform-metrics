@@ -9,6 +9,7 @@ from terraformmetrics.general.num_decisions import NumDecisions
 from terraformmetrics.terraformspec.num_resources import NumResources
 from terraformmetrics.terraformspec.avg_resource_size import AvgResourcesSize
 from terraformmetrics.terraformspec.num_remote_exec import NumRemoteExec
+from terraformmetrics.terraformspec.num_file_provisioner import NumFileProvisioner
 
 general_metrics = {
                     'lines_code': LinesCode,
@@ -20,6 +21,7 @@ general_metrics = {
 tf_metrics = {
                 'num_resources': NumResources,
                 'avg_resources_size': AvgResourcesSize,
-                'num_remote_exec': NumRemoteExec,
+                'num_remote_exec_provisioner': NumRemoteExec,
+                'num_file_provisioner': NumFileProvisioner,
              }
 
