@@ -12,7 +12,6 @@ class AvgResourcesSize(TerraformMetric):
         int
             Average resource size, rounded to the nearest unit
         """
-        resource = 0
 
         def find_start_end_lines(d):
             if isinstance(d, dict):

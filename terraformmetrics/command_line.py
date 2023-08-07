@@ -112,7 +112,7 @@ def cli():
                 metrics_2_json = json.dumps(metrics, indent=4, sort_keys=True)
                 print(metrics_2_json)
 
-        except TypeError:
-          print('\033[91m' + f'{file_path} is not a valid HCL2 file.' + '\033[0m')
+        #except TypeError:
+         # print('\033[91m' + f'{file_path} is not a valid HCL2 file.' + '\033[0m')
         except Exception as e:
             print(f'An unknown error has occurred: {str(e)}')
