@@ -2,15 +2,15 @@ from terraformmetrics.terraform_metric import TerraformMetric
 
 
 class NumHttp(TerraformMetric):
-    """ This class measures the number of modules used
+    """ This class measures the number of http data source used
     """
 
     def count(self):
-        """Return the number of modules used
+        """Return the number of http data source used
         Returns
         -------
         int
-            Number of modules used
+            Number of http data source used
         """
 
         num_http = 0

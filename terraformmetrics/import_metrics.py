@@ -13,6 +13,7 @@ from terraformmetrics.terraformspec.num_file_provisioner import NumFileProvision
 from terraformmetrics.terraformspec.num_permissions import NumFilePermissions
 from terraformmetrics.terraformspec.num_modules import NumModules
 from terraformmetrics.terraformspec.num_http_datasource import NumHttp
+from terraformmetrics.terraformspec.num_error_handling import NumErrorHandling
 
 general_metrics = {
                     'lines_code': LinesCode,
@@ -29,5 +30,6 @@ tf_metrics = {
                 'num_permissions': NumFilePermissions,
                 'num_modules': NumModules,
                 'num_http_datasource': NumHttp,
+                'num_error_handling': NumErrorHandling,
              }
 
