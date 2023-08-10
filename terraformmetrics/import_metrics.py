@@ -12,6 +12,7 @@ from terraformmetrics.terraformspec.num_remote_exec import NumRemoteExec
 from terraformmetrics.terraformspec.num_file_provisioner import NumFileProvisioner
 from terraformmetrics.terraformspec.num_permissions import NumFilePermissions
 from terraformmetrics.terraformspec.num_modules import NumModules
+from terraformmetrics.terraformspec.num_http_datasource import NumHttp
 
 general_metrics = {
                     'lines_code': LinesCode,
@@ -27,5 +28,6 @@ tf_metrics = {
                 'num_file_provisioner': NumFileProvisioner,
                 'num_permissions': NumFilePermissions,
                 'num_modules': NumModules,
+                'num_http_datasource': NumHttp,
              }
 
