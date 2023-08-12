@@ -15,8 +15,6 @@ class NumErrorHandling(TerraformMetric):
             Number of try functions
         """
 
-        num_try = 0
-
         # Funzione ricorsiva per contare il numero di funzioni try
         def count_try(data):
             count = 0
@@ -32,7 +30,5 @@ class NumErrorHandling(TerraformMetric):
             return count
 
         total_try_count = count_try(self.tfparsed)
-
-        return total_try_count
 
         return total_try_count
