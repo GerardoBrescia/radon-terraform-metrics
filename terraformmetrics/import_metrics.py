@@ -4,6 +4,7 @@ from terraformmetrics.general.lines_blank import LinesBlank
 from terraformmetrics.general.lines_comment import LinesComment
 from terraformmetrics.general.num_conditions import NumConditions
 from terraformmetrics.general.num_decisions import NumDecisions
+from terraformmetrics.general.num_tokens import NumTokens
 
 #Terraform specific
 from terraformmetrics.terraformspec.num_resources import NumResources
@@ -31,5 +32,6 @@ tf_metrics = {
                 'num_modules': NumModules,
                 'num_http_datasource': NumHttp,
                 'num_error_handling': NumErrorHandling,
+                'num_tokens': NumTokens,
              }
 
