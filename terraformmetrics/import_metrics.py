@@ -5,6 +5,7 @@ from terraformmetrics.general.lines_comment import LinesComment
 from terraformmetrics.general.num_conditions import NumConditions
 from terraformmetrics.general.num_decisions import NumDecisions
 from terraformmetrics.general.num_tokens import NumTokens
+from terraformmetrics.general.num_math_operations import NumMath
 
 #Terraform specific
 from terraformmetrics.terraformspec.num_resources import NumResources
@@ -23,6 +24,7 @@ general_metrics = {
                     'lines_comment': LinesComment,
                     'num_conditions': NumConditions,
                     'num_decisions': NumDecisions,
+                    'num_math': NumMath,
                   }
 tf_metrics = {
                 'num_resources': NumResources,
