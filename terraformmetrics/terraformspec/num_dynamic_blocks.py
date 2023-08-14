@@ -2,18 +2,18 @@ from terraformmetrics.terraform_metric import TerraformMetric
 
 
 class NumDynamicBlock(TerraformMetric):
-    """ This class measures the number of input vars in a Script Terraform
+    """ This class measures the number of dynamic blocks in a Script Terraform
     """
 
     def count(self):
-        """Return the number of input vars
+        """Return the number of dynamic blocks
         Returns
         -------
         int
-            Number of input vars
+            Number of dynamics
         """
 
-        # Funzione ricorsiva per contare il numero di variabili all'interno di un file
+        # Funzione ricorsiva per contare il numero di blocchi dynamic all'interno di un file
         def count_dynamic_blocks(data):
             count = 0
 
