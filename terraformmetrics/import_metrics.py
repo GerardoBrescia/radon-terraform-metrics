@@ -19,6 +19,7 @@ from terraformmetrics.terraformspec.num_error_handling import NumErrorHandling
 from terraformmetrics.terraformspec.num_regex import NumRegex
 from terraformmetrics.terraformspec.num_path import NumPath
 from terraformmetrics.terraformspec.num_var import NumVar
+from terraformmetrics.terraformspec.num_output import NumOutputs
 
 general_metrics = {
                     'lines_code': LinesCode,
@@ -41,5 +42,6 @@ tf_metrics = {
                 'num_regex': NumRegex,
                 'num_path': NumPath,
                 'num_var': NumVar,
+                'num_outputs': NumOutputs,
              }
 
