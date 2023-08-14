@@ -21,6 +21,7 @@ from terraformmetrics.terraformspec.num_path import NumPath
 from terraformmetrics.terraformspec.num_var import NumVar
 from terraformmetrics.terraformspec.num_output import NumOutputs
 from terraformmetrics.terraformspec.num_provider import NumProviders
+from terraformmetrics.terraformspec.num_depends_on import NumDependsOn
 
 general_metrics = {
                     'lines_code': LinesCode,
@@ -45,5 +46,6 @@ tf_metrics = {
                 'num_var': NumVar,
                 'num_outputs': NumOutputs,
                 'num_providers': NumProviders,
+                'num_depends_on': NumDependsOn,
              }
 
