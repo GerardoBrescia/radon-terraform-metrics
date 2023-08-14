@@ -24,6 +24,7 @@ from terraformmetrics.terraformspec.num_provider import NumProviders
 from terraformmetrics.terraformspec.num_depends_on import NumDependsOn
 from terraformmetrics.terraformspec.num_data_sources import NumDataSources
 from terraformmetrics.terraformspec.num_dynamic_blocks import NumDynamicBlock
+from terraformmetrics.terraformspec.num_local import NumLocals
 
 general_metrics = {
                     'lines_code': LinesCode,
@@ -51,5 +52,6 @@ tf_metrics = {
                 'num_depends_on': NumDependsOn,
                 'num_data_sources': NumDataSources,
                 'num_dynamic': NumDynamicBlock,
+                'num_locals': NumLocals,
              }
 
