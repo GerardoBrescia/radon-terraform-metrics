@@ -36,5 +36,5 @@ class NumFilePermissions(TerraformMetric):
 
             return counter
 
-        num_remote = count_file_permission(self.tfparsed)
-        return num_remote
+        num_file_permission = count_file_permission(self.tfparsed)
+        return num_file_permission
