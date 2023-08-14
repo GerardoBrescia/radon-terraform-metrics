@@ -4,15 +4,15 @@ import re
 
 
 class NumMath(TerraformMetric):
-    """ The try function is used for error handling, the method counts the number of occurrences of the latter
+    """ This class measures the number of math operators [' + ', ' - ', ' * ', ' / ', ' % ', ' ^ '] in a Script
     """
 
     def count(self):
-        """Return the number of try functions
+        """Return the number of math operators
         Returns
         -------
         int
-            Number of try functions
+            Number of math operators
         """
 
         # Funzione ricorsiva per contare il numero di funzioni try
