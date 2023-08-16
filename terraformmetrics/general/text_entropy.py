@@ -6,18 +6,16 @@ import re
 
 
 class TextEntropy(TerraformMetric):
-    """ This class measures the number of math operators [' + ', ' - ', ' * ', ' / ', ' % ', ' ^ '] in a Script
+    """ This class measures the text entropy
     """
 
     def count(self):
-        """Return the number of math operators
+        """Return the text entropy
         Returns
         -------
-        int
-            Number of math operators
+        float
+            text entropy
         """
-
-        text_entropy = 0
 
         def get_words(data):
             words= []
