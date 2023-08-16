@@ -19,7 +19,7 @@ class LinesMetric:
         if script is None:
             raise TypeError("Parameter 'script' meant to be a string, not None.")
         try :
-            # Check if is a valid yaml
+            # Check if is a valid hcl file
             self.__hcl = hcl2.loads(script, with_meta=True)
             if self.__hcl is None:
                 raise TypeError("Expected a not empty Terraform script")

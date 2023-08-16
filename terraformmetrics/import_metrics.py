@@ -6,6 +6,7 @@ from terraformmetrics.general.num_conditions import NumConditions
 from terraformmetrics.general.num_decisions import NumDecisions
 from terraformmetrics.general.num_tokens import NumTokens
 from terraformmetrics.general.num_math_operations import NumMath
+from terraformmetrics.general.text_entropy import TextEntropy
 
 #Terraform specific
 from terraformmetrics.terraformspec.num_resources import NumResources
@@ -53,5 +54,6 @@ tf_metrics = {
                 'num_data_sources': NumDataSources,
                 'num_dynamic': NumDynamicBlock,
                 'num_locals': NumLocals,
+                'text_entropy' : TextEntropy,
              }
 
