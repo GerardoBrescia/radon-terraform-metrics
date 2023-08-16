@@ -29,7 +29,7 @@ setup(name='terraformmetrics',
          "Programming Language :: Python :: 3.8",
          "Programming Language :: Python :: 3.9",
          "License :: OSI Approved :: Apache Software License",
-         "Topic :: Sopipftware Development :: Libraries :: Python Modules",
+         "Topic :: Software Development :: Libraries :: Python Modules",
          "Operating System :: OS Independent"
       ],
       install_requires=[
