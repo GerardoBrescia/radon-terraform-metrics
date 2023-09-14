@@ -31,6 +31,10 @@ class LinesMetric:
             raise TypeError("Expected a valid Terraform script")
         except lark.exceptions.VisitError:
             self.__hcl = script
+        except Exception as e:
+            self.__hcl = script
+
+
 
     @property
     def hcl(self):
