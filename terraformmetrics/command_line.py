@@ -6,7 +6,7 @@ import lark
 
 from terraformmetrics.metrics_extractor import extract_all
 
-VERSION = "1.0.3"
+VERSION = "1.0.4"
 
 
 def get_parser():
