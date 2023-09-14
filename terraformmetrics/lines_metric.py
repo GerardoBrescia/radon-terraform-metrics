@@ -1,4 +1,5 @@
 import hcl2
+import lark.exceptions
 from lark import UnexpectedCharacters
 
 
@@ -28,6 +29,8 @@ class LinesMetric:
 
         except UnexpectedCharacters as e:
             raise TypeError("Expected a valid Terraform script")
+        except lark.exceptions.VisitError:
+            self.__hcl = script
 
     @property
     def hcl(self):
