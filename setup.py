@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-VERSION = '1.0.4'
+VERSION = '1.0.5'
 
 setup(name='terraformmetrics',
       version=VERSION,
