@@ -31,7 +31,7 @@ class TerraformMetric:
         except lark.exceptions.VisitError:
             self.__hcl = {}
         except Exception as e:
-            self.__hcl = script
+            self.__hcl = {}
 
     @property
     def tfparsed(self):
